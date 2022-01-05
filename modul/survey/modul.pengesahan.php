@@ -79,7 +79,7 @@ $rs = $st->fetch(PDO::FETCH_ASSOC); //FETCH_OBJ
 		<p>
 		<h5>Saya mengaku bahawa maklumat yang diberikan dalam borang ini adalah benar, betul dan lengkap. Terima kasih atas kerjasama anda.</h5>
 		</P>
-		<input type="text" id="data_ID" name="data_ID" value="<?= $_POST["id"] ?>">
+		<input type="hidden" id="data_ID" name="data_ID" value="<?= $_POST["id"] ?>">
 		<input type="hidden" id="post_action" name="post_action" value="hantar">
 	</form>
 </div>
@@ -91,29 +91,6 @@ $rs = $st->fetch(PDO::FETCH_ASSOC); //FETCH_OBJ
 </div>
 
 <script type="text/javascript">
-$('#indiv-frame .btn-toolbar').on('click','button', function(){
-        var d = $indi.row('.selected').data();
-        //console.log(d);
-
-		switch(this.id)
-		{
-			case 'individu-hantar':
-				view = $("#modal-action")
-					.modal({backdrop:"static"})
-					.on("hidden.bs.modal", function(e){
-						$("#modal-action").html($loader);
-						$indi.clearPipeline().draw();
-						$('#modal-action').off("hidden.bs.modal");				
-					});
-
-				view.find(".modal-content").load("modul.php?load=survey/"+ $(this).attr("data-url"), {"id": $data[0], "modul":"profile"}, function(response, status, xhr){
-				});
-				break;
-			default:
-				console.log("click", this.id);
-
-		}
-	});	
 
 	function _SAVE_() {
         if (validator.form()) $('form', $form).submit();
