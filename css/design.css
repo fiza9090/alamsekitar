@@ -1,0 +1,64 @@
+table tr,td{
+	
+	 font-family:Arial, Helvetica, sans-serif; 
+	 font-size:12px;
+	 border:1px solid #999;
+	 border-collapse:collapse;
+     padding: 10px;
+}
+input:read-only {
+    background-color:#CCC;
+}
+#dis {
+	background-color: #FF0000;
+	color:#000;
+	border-radius: 10px;
+	border: 0px;
+	text-align: left;
+	text-width: 0px;
+	padding: 0px;
+}
+#dis1 {
+	background-color: #FF0000;
+	color:#000;
+	border-radius: 10px;
+	border: 0px;
+	text-align: left;
+	text-width: 0px;
+	padding: 0px;
+}
+#dis2 {
+	background-color: #FF0000;
+	color:#000;
+	border-radius: 10px;
+	border: 0px;
+	text-align: left;
+	text-width: 0px;
+	padding: 0px;
+}
+
+#dis3 {
+	background-color: #FF0000;
+	color:#000;
+	border-radius: 10px;
+	border: 0px;
+	text-align: left;
+	text-width: 0px;
+	padding: 0px;
+}
+
+#dis4 {
+	background-color: #FF0000;
+	color:#000;
+	border-radius: 10px;
+	border: 0px;
+	text-align: left;
+	text-width: 0px;
+	padding: 0px;
+}
+.lastmonth {
+	
+	color:blue;
+	text-align:left;
+}
+
